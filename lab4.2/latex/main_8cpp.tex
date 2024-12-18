@@ -1,0 +1,53 @@
+\doxysection{Файл main.\+cpp}
+\hypertarget{main_8cpp}{}\label{main_8cpp}\index{main.cpp@{main.cpp}}
+
+
+Главный файл программы, реализующей шифрование и расшифровку текста методом табличной маршрутной перестановки.  
+
+
+{\ttfamily \#include "{}mod\+Alphakey.\+h"{}}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$cctype$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+Граф включаемых заголовочных файлов для main.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{main_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Функции}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{main_8cpp_a3eacb83174d2a9fbf9b313ebf1a9a883}{is\+Valid}} (const string \&s)
+\begin{DoxyCompactList}\small\item\em Проверяет корректность строки. \end{DoxyCompactList}\item 
+\Hypertarget{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4} 
+int {\bfseries main} ()
+\begin{DoxyCompactList}\small\item\em Главная функция программы. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Главный файл программы, реализующей шифрование и расшифровку текста методом табличной маршрутной перестановки. 
+
+
+
+\doxysubsection{Функции}
+\Hypertarget{main_8cpp_a3eacb83174d2a9fbf9b313ebf1a9a883}\label{main_8cpp_a3eacb83174d2a9fbf9b313ebf1a9a883} 
+\index{main.cpp@{main.cpp}!isValid@{isValid}}
+\index{isValid@{isValid}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{isValid()}{isValid()}}
+{\footnotesize\ttfamily bool is\+Valid (\begin{DoxyParamCaption}\item[{const string \&}]{s }\end{DoxyParamCaption})}
+
+
+
+Проверяет корректность строки. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em s} & Входная строка. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+true, если строка состоит только из заглавных букв английского алфавита. 
+\end{DoxyReturn}

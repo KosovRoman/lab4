@@ -1,0 +1,31 @@
+\doxysection{mod\+Alphakey.\+h}
+\hypertarget{modAlphakey_8h_source}{}\label{modAlphakey_8h_source}\mbox{\hyperlink{modAlphakey_8h}{См. документацию.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <stdexcept>}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00011\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classmodAlphakey}{modAlphakey}}\ \{}
+\DoxyCodeLine{00012\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00013\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classmodAlphakey_a074fee04711f5c98f86916c1a120e6a0}{key1}};\ }
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00017\ \ \ \ \ \mbox{\hyperlink{classmodAlphakey_a6e7e20c8274ca1249010d37dc2f68c3c}{modAlphakey}}()\ =\ \textcolor{keyword}{delete};}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00021\ \ \ \ \ \mbox{\hyperlink{classmodAlphakey_a6b9be456ba4617569630c6edaad771d5}{modAlphakey}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\&\ key)\ \{}
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (key\ <=\ 0)\ \{}
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ std::invalid\_argument(\textcolor{stringliteral}{"{}Key\ must\ be\ greater\ than\ 0."{}});}
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classmodAlphakey_a074fee04711f5c98f86916c1a120e6a0}{key1}}\ =\ key;}
+\DoxyCodeLine{00026\ \ \ \ \ \}}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00031\ \ \ \ \ std::string\ \mbox{\hyperlink{classmodAlphakey_aedd4bd0d103031353805217444d06bed}{encrypt}}(\textcolor{keyword}{const}\ std::string\&\ open\_text);}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00036\ \ \ \ \ std::string\ \mbox{\hyperlink{classmodAlphakey_af947445d194794a9934710226f4ed479}{decrypt}}(\textcolor{keyword}{const}\ std::string\&\ cipher\_text);}
+\DoxyCodeLine{00037\ \};}
+\DoxyCodeLine{00038\ }
+
+\end{DoxyCode}

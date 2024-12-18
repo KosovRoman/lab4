@@ -1,0 +1,53 @@
+\doxysection{Файл main.\+cpp}
+\hypertarget{main_8cpp}{}\label{main_8cpp}\index{main.cpp@{main.cpp}}
+
+
+Главный файл программы, реализующей шифрование и расшифровку текста методом модифицированного шифра Альфа.  
+
+
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$cctype$>$}\newline
+{\ttfamily \#include "{}mod\+Alpha\+Chiper.\+h"{}}\newline
+{\ttfamily \#include $<$locale$>$}\newline
+Граф включаемых заголовочных файлов для main.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{main_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Функции}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{main_8cpp_a846d60edc98fcf814616415ff9713ee4}{is\+Valid}} (const std\+::wstring \&s)
+\begin{DoxyCompactList}\small\item\em Проверяет корректность строки. \end{DoxyCompactList}\item 
+\Hypertarget{main_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}\label{main_8cpp_a3c04138a5bfe5d72780bb7e82a18e627} 
+int {\bfseries main} (int argc, char \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}argv)
+\begin{DoxyCompactList}\small\item\em Главная функция программы. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Главный файл программы, реализующей шифрование и расшифровку текста методом модифицированного шифра Альфа. 
+
+
+
+\doxysubsection{Функции}
+\Hypertarget{main_8cpp_a846d60edc98fcf814616415ff9713ee4}\label{main_8cpp_a846d60edc98fcf814616415ff9713ee4} 
+\index{main.cpp@{main.cpp}!isValid@{isValid}}
+\index{isValid@{isValid}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{isValid()}{isValid()}}
+{\footnotesize\ttfamily bool is\+Valid (\begin{DoxyParamCaption}\item[{const std\+::wstring \&}]{s }\end{DoxyParamCaption})}
+
+
+
+Проверяет корректность строки. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em s} & Входная строка. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+true, если строка состоит только из заглавных букв русского алфавита или символа \textquotesingle{}Ё\textquotesingle{}. 
+\end{DoxyReturn}
